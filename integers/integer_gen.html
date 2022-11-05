@@ -8,30 +8,50 @@
 </head>
 
 <body id="grad">
-    <form id="integer_gen" action="https://www.random.org/integers/">
-        <label for="input">How many integers should be generated?</label>
-        <input type="text" id="input"/>
-        <br />
-
-        <label for="lower">Lower bound for the number</label>
-        <input type="text" id="lower" />
-        <br />
-
-        <label for="upper">Upper bound for the number</label>
-        <input type="text"  id="upper" />
-        <br />
-
-        <label for="col">In how many columns should the numbers be organised?</label>
-        <input type="text"  id="col" />
-        <br />
-    </form>
-    <br />
-    <input type="submit" value="Get Numbers" />
-    <br />
     <a
         href="  http://validator.w3.org/check?uri=https://alexandraamarian.github.io/Form-acting-as-an-web-interface-for-random.org/integers/integer_gen.html">Validate
+        page first
     </a>
-    <a href="../index.html">Back</a>
+    <br />
+    <a href="../index.html">Back to the main page</a>
+    <div class="border">
+        <form id="integer_gen" action="https://www.random.org/integers/">
+            <br />
+            <label for="num">How many integers should be generated?</label>
+            <input type="text" name="num" id="num" />
+            <br />
+
+            <label for="min">Lower bound for the number</label>
+            <input type="text" name="min" id="min" />
+            <br />
+
+            <label for="max">Upper bound for the number</label>
+            <input type="text" name="max" id="max" />
+            <br />
+
+            <label for="col">In how many columns should the numbers be organised?</label>
+            <input type="text" name="col" id="col" />
+            <br />
+            <br />
+
+            <label for="html">HTML</label>
+            <input type="radio" name="format" id="html" value="html" checked="checked" />
+
+            <label for="plain">Plain</label>
+            <input type="radio" name="format" id="plain" value="plain" />
+            <br />
+
+            <p>
+                How should the integers be displayed?<br />
+                <input class="indented" type="radio" name="base" value="16" />Base 16 - Hexadecimal<br />
+                <input class="indented" type="radio" name="base" value="10" checked="checked" />Base 1 - Decimal<br />
+                <input class="indented" type="radio" name="base" value="8" /> Base 8 - Octal<br />
+                <input class="indented" type="radio" name="base" value="2" /> Base 2 - Binary<br />
+            </p>
+            <input type="submit" value="Get Numbers" />
+            <br />
+        </form>
+    </div>
 </body>
 
 </html>
