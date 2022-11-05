@@ -18,6 +18,11 @@
     transform: translate(-50%, -50%);
 }
 
+p{
+    text-align: center;
+    font-weight: bold;
+}
+
 ul{
     height: 45vh;
     display:contents;
